@@ -7,15 +7,17 @@ import * as files from '../../data/files.json';
 })
 export class FileApiService {
 
-  constructor() {
+  constructor() {}
+
+   init() : void {
     createServer({
-        routes(){
-          this.namespace = 'api';
-          this.get('/files', () => {
-            return files;
-          });
-        }
-    });
+      routes(){
+        this.namespace = 'api';
+        this.get('/files', () => {
+          return files;
+        });
+      }
+  });
    }
 
 }
