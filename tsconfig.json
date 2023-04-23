@@ -16,7 +16,8 @@
     "resolveJsonModule": true
   },
   "angularCompilerOptions": {
-    "strictTemplates": true,
+    "enableIvy": true,
+    "fullTemplateTypeCheck": true,
     "strictInjectionParameters": true
   }
 }

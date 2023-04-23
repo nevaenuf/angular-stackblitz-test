@@ -11,7 +11,6 @@ export class AppComponent implements OnInit {
   constructor(private apiService: FileApiService) { }
 
   ngOnInit() {
-    console.log("calling apiService.init()");
     this.apiService.init();
   }
 
