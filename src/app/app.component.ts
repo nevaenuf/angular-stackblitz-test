@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FileApiService } from 'src/core/file-api.service';
+import { FileApiService } from '../core/file-api.service';
 
 @Component({
   selector: 'at-app',
@@ -11,6 +11,7 @@ export class AppComponent implements OnInit {
   constructor(private apiService: FileApiService) { }
 
   ngOnInit() {
+    console.log("calling apiService.init()");
     this.apiService.init();
   }
 

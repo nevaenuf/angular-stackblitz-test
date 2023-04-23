@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { createServer } from 'miragejs';
-import * as files from '../../data/files.json';
+import files from '../data/files.json';
 
 @Injectable({
   providedIn: 'root'
