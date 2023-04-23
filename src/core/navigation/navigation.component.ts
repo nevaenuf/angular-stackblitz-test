@@ -17,7 +17,7 @@ export class NavigationComponent implements OnInit {
     this.items = [
       {id:'filesMenu', label: 'Files', routerLink: ['files'] },
       {id: 'configMenu', label: 'Configuration', routerLink: ['config']},
-      {id: 'schedulesMenu', label: 'Schedules', routerLink: ['schedules']}
+      {id: 'schedulesMenu', label: 'Schedules', routerLink: ['schedule']}
     ]
   }
 

@@ -5,6 +5,9 @@ import { RouterModule } from '@angular/router';
 import { SharedModule } from '../shared/shared.module';
 import { CoreModule } from '../core/core.module';
 import { FilesComponent } from './files/files.component';
+import { ConfigurationComponent } from './configuration/configuration.component';
+import { ScheduleComponent } from './schedule/schedule.component';
+import {TableModule} from 'primeng/table'
 
 @NgModule({
   imports: [
@@ -13,6 +16,9 @@ import { FilesComponent } from './files/files.component';
     CoreModule,
     RouterModule.forRoot([
       {path: '', component: FilesComponent},
+      {path: 'files', component: FilesComponent},
+      {path: 'config', component: ConfigurationComponent},
+      {path: 'schedule', component: ScheduleComponent},
       {path: '**', redirectTo: ''}
     ])
   ],
