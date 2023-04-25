@@ -7,12 +7,14 @@ import { FilesComponent } from './files/files.component';
 import { ConfigurationComponent } from './configuration/configuration.component';
 import { ScheduleComponent } from './schedule/schedule.component';
 import { HttpClientModule } from '@angular/common/http';
+import { TableModule } from 'primeng/table';
 
 @NgModule({
   imports: [
     BrowserModule,
     CoreModule,
     HttpClientModule,
+    TableModule,
     RouterModule.forRoot([
       { path: '', component: FilesComponent },
       { path: 'files', component: FilesComponent },
@@ -21,7 +23,12 @@ import { HttpClientModule } from '@angular/common/http';
       { path: '**', redirectTo: '' },
     ]),
   ],
-  declarations: [AppComponent, FilesComponent, ConfigurationComponent, ScheduleComponent],
+  declarations: [
+    AppComponent,
+    FilesComponent,
+    ConfigurationComponent,
+    ScheduleComponent,
+  ],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
